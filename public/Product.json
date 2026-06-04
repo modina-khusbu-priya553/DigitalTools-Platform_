@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with ATS-friendly templates and export options.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Cover letter builder"
+    ],
+    "icon": "file-text"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Build and host a personal portfolio website without coding.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Custom domain support",
+      "SEO optimized",
+      "Drag-and-drop editor",
+      "Mobile responsive"
+    ],
+    "icon": "globe"
+  },
+  {
+    "id": 3,
+    "name": "Career Accelerator",
+    "description": "Comprehensive career growth platform with coaching and job tracking.",
+    "price": 149,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "1-on-1 coaching",
+      "Job application tracker",
+      "Interview preparation",
+      "Skill assessments"
+    ],
+    "icon": "trending-up"
+  },
+  {
+    "id": 4,
+    "name": "Interview Prep AI",
+    "description": "Practice technical and behavioral interviews with AI feedback.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Mock interviews",
+      "Real-time feedback",
+      "Coding challenges",
+      "Performance analytics"
+    ],
+    "icon": "message-square"
+  },
+  {
+    "id": 5,
+    "name": "Freelancer Starter Pack",
+    "description": "Essential tools and templates for launching a freelance career.",
+    "price": 79,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Proposal templates",
+      "Invoice generator",
+      "Client onboarding kit",
+      "Contract samples"
+    ],
+    "icon": "briefcase"
+  },
+  {
+    "id": 6,
+    "name": "Learning Hub Premium",
+    "description": "Access expert-led courses and certifications for career advancement.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "500+ courses",
+      "Certification exams",
+      "Progress tracking",
+      "Community access"
+    ],
+    "icon": "book-open"
+  },
+  {
+    "id": 7,
+    "name": "Team Collaboration Suite",
+    "description": "Manage projects, tasks, and communication in one platform.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Task management",
+      "Team chat",
+      "File sharing",
+      "Project dashboards"
+    ],
+    "icon": "users"
+  },
+  {
+    "id": 8,
+    "name": "Startup Launch Toolkit",
+    "description": "Resources and templates to help founders launch their business.",
+    "price": 129,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Business plan templates",
+      "Pitch deck builder",
+      "Financial forecasting",
+      "Investor resources"
+    ],
+    "icon": "rocket"
+  }
+]
