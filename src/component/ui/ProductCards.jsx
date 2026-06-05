@@ -1,10 +1,15 @@
 import 'react';
+import { useState } from 'react';
 
 const ProductCards = ({product}) => {
+
+    const [isBuy, setIsBuy] = useState(false)
+
+
     console.log(product)
     return (
         <div>
-            <div className="card bg-base-100  p-6 border-4 border-[#F2F2F2] rounded-lg">
+            <div className="card bg-base-100  p-6 border-4 border-[#F2F2F2] rounded-lg shadow-sm">
                     <div className="flex items-center justify-end">
                         <span className="badge badge-xs badge-warning font-medium py-1.5 px-3">{product.tagType}</span>
                     </div>

@@ -1,10 +1,14 @@
 import 'react';
-import { use } from 'react';
-import AvailableProducts from './availabelProducts/AvailableProducts';
+import { use, useState } from 'react';
+import AvailableProducts from './availableProducts/AvailableProducts';
+import SelectedProducts from './selectedProducts/SelectedProducts';
 
 const DigitalTools = ({productsPromise}) => {
     const products = use(productsPromise)
-    console.log(products);
+
+    const [selectedType, setSelectedType] = useState("products");
+    const [selectedProducts, setSelectedProducts] = useState([])
+    
 
     return (
         <div>
@@ -14,14 +18,30 @@ const DigitalTools = ({productsPromise}) => {
                     <br /> to boost your productivity and creativity.</p>
 
                 <div>
-                    <button className="btn btn-xs sm:btn-sm md:btn-md rounded-l-full font-bold text-white 
-                            bg-linear-65 from-[#4F39F6] to-[#9514FA]">Products</button>
-                    <button className="btn btn-ghost btn-xs sm:btn-sm md:btn-md rounded-r-full font-bold text-[#25065D]">Cart(2)</button>
+                    <button onClick={() => setSelectedType("products")} 
+                        className={`btn btn-xs sm:btn-sm md:btn-md rounded-l-full font-bold
+                            ${selectedType === "products" ? "bg-linear-65 from-[#4F39F6] to-[#9514FA] text-white": "text-[#25065D]"} `}>Products</button>
+                    <button onClick={() => setSelectedType("carts")}  className={`btn btn-xs sm:btn-sm md:btn-md rounded-r-full font-bold 
+                            ${selectedType === "carts" ? "bg-linear-65 from-[#4F39F6] to-[#9514FA] text-white": "text-[#25065D]"} `}>
+                                Cart({selectedProducts.length})</button>
                 </div>
 
             </div>
 
-            <AvailableProducts products = {products} />
+            {selectedType === "products"? 
+                <AvailableProducts 
+                    products = {products} 
+                    selectedProducts={selectedProducts} 
+                    setSelectedProducts={setSelectedProducts} 
+                    /> :
+                <SelectedProducts 
+                    selectedProducts={selectedProducts} 
+                    setSelectedProducts={setSelectedProducts} 
+                    />
+            }
+
+            
+            
             
         </div>
     );
