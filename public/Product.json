@@ -126,5 +126,20 @@
       "Investor resources"
     ],
     "icon": "https://i.ibb.co/5WR3XqNs/design-tool.png"
+  },
+  {
+    "id": 5,
+    "name": "Business Starter",
+    "description": "Everything you need to launch and manage your small business online.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Website templates",
+      "Invoice generator",
+      "Customer management"
+    ],
+    "icon": "https://i.ibb.co/B5q1fLD5/writing-2327400-1.png"
   }
 ]

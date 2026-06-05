@@ -1,19 +1,21 @@
 import 'react';
+import ProductCards from '../../ui/ProductCards';
 
 
 
 const AvailableProducts = ({products}) => {
-    console.log(products)
+    console.log(products);
     return (
-        <div>
+        <div className="container mx-auto">
+            <div className="grid grid-cols-3 gap-6">
+                {products.map((product) => {
+                return(
+                    <ProductCards product={product} />
 
-            {products.map((product) => {
-                console.log(product);
-            } )}
-
-            
-            
-            
+                );
+                
+            })} 
+            </div>    
         </div>
     );
 };
