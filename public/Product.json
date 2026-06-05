@@ -13,7 +13,7 @@
       "Export to PDF",
       "Cover letter builder"
     ],
-    "icon": "file-text"
+    "icon": "https://i.ibb.co/QFLJvYsV/portfolio.png"
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
       "Drag-and-drop editor",
       "Mobile responsive"
     ],
-    "icon": "globe"
+    "icon": "https://i.ibb.co/5WR3XqNs/design-tool.png"
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
       "Interview preparation",
       "Skill assessments"
     ],
-    "icon": "trending-up"
+    "icon": "https://i.ibb.co/B5q1fLD5/writing-2327400-1.png"
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
       "Coding challenges",
       "Performance analytics"
     ],
-    "icon": "message-square"
+    "icon": "https://i.ibb.co/0dm0jqM/social-media.png"
   },
   {
     "id": 5,
@@ -77,7 +77,7 @@
       "Client onboarding kit",
       "Contract samples"
     ],
-    "icon": "briefcase"
+    "icon": "https://i.ibb.co/0dm0jqM/social-media.png"
   },
   {
     "id": 6,
@@ -93,7 +93,7 @@
       "Progress tracking",
       "Community access"
     ],
-    "icon": "book-open"
+    "icon": "https://i.ibb.co/rRkbqGXY/operation.png"
   },
   {
     "id": 7,
@@ -109,7 +109,7 @@
       "File sharing",
       "Project dashboards"
     ],
-    "icon": "users"
+    "icon": "https://i.ibb.co/rRkbqGXY/operation.png"
   },
   {
     "id": 8,
@@ -125,6 +125,6 @@
       "Financial forecasting",
       "Investor resources"
     ],
-    "icon": "rocket"
+    "icon": "https://i.ibb.co/5WR3XqNs/design-tool.png"
   }
 ]
