@@ -14,7 +14,6 @@ const AvailableProducts = ({products, selectedProducts, setSelectedProducts}) =>
                         key={product.id}
                         selectedProducts = {selectedProducts} 
                         setSelectedProducts = {setSelectedProducts}
-                        
                         />
 
                 );

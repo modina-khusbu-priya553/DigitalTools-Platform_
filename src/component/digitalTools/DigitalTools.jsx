@@ -1,13 +1,11 @@
 import 'react';
-import { use, useState } from 'react';
+import { use} from 'react';
 import AvailableProducts from './availableProducts/AvailableProducts';
 import SelectedProducts from './selectedProducts/SelectedProducts';
 
-const DigitalTools = ({productsPromise}) => {
+const DigitalTools = ({productsPromise,selectedType, setSelectedType, selectedProducts,setSelectedProducts}) => {
     const products = use(productsPromise)
 
-    const [selectedType, setSelectedType] = useState("products");
-    const [selectedProducts, setSelectedProducts] = useState([])
     
 
     return (
@@ -33,10 +31,12 @@ const DigitalTools = ({productsPromise}) => {
                     products = {products} 
                     selectedProducts={selectedProducts} 
                     setSelectedProducts={setSelectedProducts} 
+                    
                     /> :
                 <SelectedProducts 
                     selectedProducts={selectedProducts} 
-                    setSelectedProducts={setSelectedProducts} 
+                    setSelectedProducts={setSelectedProducts}
+                    
                     />
             }
 

@@ -9,7 +9,10 @@ const SelectedProducts = ({selectedProducts, setSelectedProducts}) => {
         <div>
             {selectedProducts.length === 0 ? <EmptyCard /> : 
             <SelectedCards 
-                selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} />}    
+                selectedProducts={selectedProducts} 
+                setSelectedProducts={setSelectedProducts}
+                
+                />}    
         </div>
     );
 };

@@ -2,11 +2,24 @@ import 'react';
 
 const SelectedCards = ({selectedProducts, setSelectedProducts}) => {
 
+    const totalPrice = () => {
+        let total = 0;
+        selectedProducts.forEach(productPrice => total += productPrice.price);
+        return total;
+
+    }
+
+    
+
     const handleProductRemove = (product) => {
 
         const filterProduct = selectedProducts.filter((selectedProduct) => selectedProduct.name !== product.name);
         setSelectedProducts(filterProduct);
 
+    }
+
+    const handleReset = () => {
+        setSelectedProducts ([]);
     }
 
 
@@ -34,10 +47,10 @@ const SelectedCards = ({selectedProducts, setSelectedProducts}) => {
 
             <div className='flex items-center justify-between'>
                 <p className="text-gray-600">Total: </p>
-                <h2 className='font-bold text-2xl'>$78</h2>
+                <h2 className='font-bold text-2xl'>${totalPrice()}</h2>
             </div>
 
-            <button className='btn bg-linear-65 from-[#4F39F6] to-[#9514FA] 
+            <button onClick ={handleReset} className='btn bg-linear-65 from-[#4F39F6] to-[#9514FA] 
                  text-white font-bold rounded-full py-4'>Proceed To Checkout</button>
             
             </div>

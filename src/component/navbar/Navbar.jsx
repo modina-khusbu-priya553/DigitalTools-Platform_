@@ -3,7 +3,7 @@ import { LinearGradient } from 'react-text-gradients'
 import { FiShoppingCart } from "react-icons/fi";
 
 
-const Navbar = () => {
+const Navbar = ({selectedProducts}) => {
     return (
         <div>            
             <div className="bg-base-100 shadow-sm">
@@ -46,7 +46,7 @@ const Navbar = () => {
                     <div className="navbar-end flex items-center justify-center gap-4 py-6">
                         <div className="indicator">
                             <span className="indicator-item badge 
-                            badge-secondary badge-sm font-semibold rounded-full h-5 w-5">12</span>
+                            badge-secondary badge-sm font-semibold rounded-full h-5 w-5">{selectedProducts.length}</span>
                             <button className="btn btn-ghost btn-sm"><FiShoppingCart size={16} /></button>
                         </div>
                             <h2 className="font-semibold">Login</h2>
