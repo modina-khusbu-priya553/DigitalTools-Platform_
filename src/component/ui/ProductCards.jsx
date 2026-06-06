@@ -1,15 +1,21 @@
 import 'react';
 import { useState } from 'react';
 
-const ProductCards = ({product}) => {
+const ProductCards = ({product, selectedProducts, setSelectedProducts}) => {
 
     const [isBuy, setIsBuy] = useState(false)
 
+    const handleChooseProducts = () => {
+        setIsBuy(!isBuy);
 
-    console.log(product)
+        setSelectedProducts ([...selectedProducts, product]);
+
+    }
+
+
     return (
-        <div>
-            <div className="card bg-base-100  p-6 border-4 border-[#F2F2F2] rounded-lg shadow-sm">
+        <div className="h-full">
+            <div className="card bg-base-100 p-6 border-4 border-[#F2F2F2] rounded-lg shadow-sm h-full">
                     <div className="flex items-center justify-end">
                         <span className="badge badge-xs badge-warning font-medium py-1.5 px-3">{product.tagType}</span>
                     </div>
@@ -38,7 +44,12 @@ const ProductCards = ({product}) => {
                             }    
                         </ul>
                         <div className="mt-6">
-                            <button className="btn btn-primary btn-block rounded-full font-bold">Buy Now</button>
+                            <button onClick={handleChooseProducts} 
+                                className={`btn btn-block rounded-full font-bold text-white
+                                ${isBuy ? "bg-green-600" : "bg-linear-65 from-[#4F39F6] to-[#9514FA]"}`}>
+                                {isBuy ? "Add to Cart!" : "Buy Now"}
+                                
+                            </button>
                         </div>
                         
                     </div>
