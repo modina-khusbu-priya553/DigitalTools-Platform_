@@ -1,5 +1,7 @@
 import 'react';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
+
 
 const ProductCards = ({product, selectedProducts, setSelectedProducts}) => {
 
@@ -9,15 +11,23 @@ const ProductCards = ({product, selectedProducts, setSelectedProducts}) => {
         setIsBuy(!isBuy);
 
         setSelectedProducts ([...selectedProducts, product]);
+        toast.success("Product is add to cart");
 
     }
+    const getBadgeClass = (tag) => {
+    if (tag === "Best Seller") return "bg-[#FFF3D6] text-[#B45309]";
+    if (tag === "Popular") return "bg-[#EDE9FF] text-[#6D28D9]";
+    if (tag === "New") return "bg-[#DCFCE7] text-[#15803D]";
+    return "";
+    }
+    
 
 
     return (
         <div className="h-full">
             <div className="card bg-base-100 p-3 border-4 border-[#F2F2F2] rounded-lg shadow-sm h-full">
                     <div className="flex items-center justify-end">
-                        <span className="badge badge-xs badge-warning font-medium py-1.5 px-3">{product.tagType}</span>
+                        <span className={`badge font-medium py-1.5 px-3 ${getBadgeClass(product.tag)}`}>{product.tag}</span>
                     </div>
                     <div className="card-body">
                         <div className='w-fit p-3.5 border-2 border-[#F2F2F2] rounded-full'>

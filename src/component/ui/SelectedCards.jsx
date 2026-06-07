@@ -1,4 +1,5 @@
 import 'react';
+import { toast } from 'react-toastify';
 
 const SelectedCards = ({selectedProducts, setSelectedProducts}) => {
 
@@ -15,11 +16,13 @@ const SelectedCards = ({selectedProducts, setSelectedProducts}) => {
 
         const filterProduct = selectedProducts.filter((selectedProduct) => selectedProduct.name !== product.name);
         setSelectedProducts(filterProduct);
+        toast.info("Product remove from cart");
 
     }
 
     const handleReset = () => {
         setSelectedProducts ([]);
+        toast.success("Proceed to checkout");
     }
 
 

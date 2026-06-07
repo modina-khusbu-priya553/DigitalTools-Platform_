@@ -7,6 +7,8 @@ import Stats from './component/StatsSection/Stats';
 import Steps from './component/steps/Steps';
 import Pricing from './component/pricing/Pricing';
 import Footer from './component/footer/Footer';
+import { ToastContainer} from 'react-toastify';
+
 
 
 const productsData = async () => {
@@ -41,6 +43,8 @@ function App() {
     <Steps />
     <Pricing />
     <Footer />
+
+    <ToastContainer />
 
     </>
   )
