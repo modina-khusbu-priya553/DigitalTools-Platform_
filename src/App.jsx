@@ -12,7 +12,7 @@ import { ToastContainer} from 'react-toastify';
 
 
 const productsData = async () => {
-    const res = await fetch ("/public/Product.json");
+    const res = await fetch ("/Product.json");
     return res.json();
 
   }
