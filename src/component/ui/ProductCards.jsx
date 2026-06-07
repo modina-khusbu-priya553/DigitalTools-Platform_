@@ -15,7 +15,7 @@ const ProductCards = ({product, selectedProducts, setSelectedProducts}) => {
 
     return (
         <div className="h-full">
-            <div className="card bg-base-100 p-6 border-4 border-[#F2F2F2] rounded-lg shadow-sm h-full">
+            <div className="card bg-base-100 p-3 border-4 border-[#F2F2F2] rounded-lg shadow-sm h-full">
                     <div className="flex items-center justify-end">
                         <span className="badge badge-xs badge-warning font-medium py-1.5 px-3">{product.tagType}</span>
                     </div>
@@ -23,10 +23,10 @@ const ProductCards = ({product, selectedProducts, setSelectedProducts}) => {
                         <div className='w-fit p-3.5 border-2 border-[#F2F2F2] rounded-full'>
                             <img src={product.icon} alt='WritingTool'/>
                         </div>
-                        <h2 className="card-title font-bold text-2xl">{product.name}</h2>
+                        <h2 className="card-title font-bold md:text-2xl text-xl">{product.name}</h2>
                         <p className='text-[#627382]'>{product.description}</p>
 
-                        <span className="text-xl font-bold">{product.price}
+                        <span className="md:text-xl text-lg font-bold">${product.price}
                             <span className="text-sm text-[#627382]">/{product.period}</span></span>
 
                         <ul className="mt-2 flex flex-col gap-2 text-sm font-medium text-[#627382]">
@@ -45,7 +45,7 @@ const ProductCards = ({product, selectedProducts, setSelectedProducts}) => {
                         </ul>
                         <div className="mt-6">
                             <button onClick={handleChooseProducts} 
-                                className={`btn btn-block rounded-full font-bold text-white
+                                className={`btn btn-block rounded-full font-bold text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg
                                 ${isBuy ? "bg-green-600" : "bg-linear-65 from-[#4F39F6] to-[#9514FA]"}`}>
                                 {isBuy ? "Add to Cart!" : "Buy Now"}
                                 

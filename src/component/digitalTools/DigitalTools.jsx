@@ -10,9 +10,9 @@ const DigitalTools = ({productsPromise,selectedType, setSelectedType, selectedPr
 
     return (
         <div>
-            <div className='container mx-auto py-28 text-center space-y-4'>
-                <h2 className='font-extrabold text-5xl text-[#101727]'>Premium Digital Tools</h2>
-                <p className='text-[#627382]'>Choose from our curated collection of premium digital products designed 
+            <div className='container mx-auto xl:py-28 text-center space-y-4 py-6 px-6 md:mt-8 lg:py-16'>
+                <h2 className='font-extrabold md:text-5xl text-[#101727]'>Premium Digital Tools</h2>
+                <p className='text-[#627382] text-xs md:text-sm'>Choose from our curated collection of premium digital products designed 
                     <br /> to boost your productivity and creativity.</p>
 
                 <div>

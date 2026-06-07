@@ -4,6 +4,9 @@ import Banner from './component/banner/Banner';
 import DigitalTools from './component/digitalTools/DigitalTools';
 import Navbar from './component/navbar/Navbar'
 import Stats from './component/StatsSection/Stats';
+import Steps from './component/steps/Steps';
+import Pricing from './component/pricing/Pricing';
+import Footer from './component/footer/Footer';
 
 
 const productsData = async () => {
@@ -31,11 +34,13 @@ function App() {
       selectedProducts ={selectedProducts}
       setSelectedProducts ={setSelectedProducts}
       selectedType ={selectedType}
-      setSelectedType={setSelectedType}
-
-      
+      setSelectedType={setSelectedType} 
       />
     </Suspense>
+
+    <Steps />
+    <Pricing />
+    <Footer />
 
     </>
   )
