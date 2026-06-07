@@ -27,7 +27,7 @@ const ProductCards = ({product, selectedProducts, setSelectedProducts}) => {
         <div className="h-full">
             <div className="card bg-base-100 p-3 border-4 border-[#F2F2F2] rounded-lg shadow-sm h-full">
                     <div className="flex items-center justify-end">
-                        <span className={`badge font-bold py-2 px-3 ${getBadgeClass(product.tag)}`}>{product.tag}</span>
+                        <span className={`badge font-bold py-2git px-3 ${getBadgeClass(product.tag)}`}>{product.tag}</span>
                     </div>
                     <div className="card-body">
                         <div className='w-fit p-3.5 border-2 border-[#F2F2F2] rounded-full'>
