@@ -2,7 +2,7 @@ import 'react';
 import { LinearGradient } from 'react-text-gradients'
 import { FaRegCircleDot } from "react-icons/fa6";
 // import PlayImg from "../../assets/Play.png"
-import bannerImg from "../../assets/products/banner.png"
+// import bannerImg from "../../assets/products/banner.png"
 
 
 const Banner = () => {
@@ -36,7 +36,7 @@ const Banner = () => {
                 
                 {/* right-container */}
                 <div className='lg:mt-24 md:mt-6 mt-8'>
-                    <img src={bannerImg} alt='bannerImg'/>
+                    {/* <img src={bannerImg} alt='bannerImg'/> */}
 
 
                 </div>
