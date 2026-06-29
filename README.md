@@ -1,4 +1,4 @@
-#Digital-Tools-Platform
+# Digital-Tools-Platform
 
 A modern, fully responsive product catalog and interactive pricing platform with real-time cart functionality. Built using React, DaisyUI and Tailwind CSS.
 
