@@ -1,8 +1,8 @@
 import 'react';
 import { LinearGradient } from 'react-text-gradients'
 import { FaRegCircleDot } from "react-icons/fa6";
-// import PlayImg from "../../assets/Play.png"
-// import bannerImg from "../../assets/products/banner.png"
+import PlayImg from "../../assets/Play.png"
+import bannerImg from "../../assets/products/banner.png"
 
 
 const Banner = () => {
@@ -28,7 +28,7 @@ const Banner = () => {
                             bg-linear-65 from-[#4F39F6] from-60% to-[#9514FA] via-40%">Get Started
                         </a>
                         <a className="btn btn-outline btn-primary btn-xs sm:btn-sm md:btn-md rounded-full font-bold">
-                            <img src=""alt="play_img" className='w-4'/>
+                            <img src={PlayImg} alt="play_img" className='w-4'/>
                             Watch Demo
                         </a>    
                     </div>
@@ -36,7 +36,7 @@ const Banner = () => {
                 
                 {/* right-container */}
                 <div className='lg:mt-24 md:mt-6 mt-8'>
-                    {/* <img src={bannerImg} alt='bannerImg'/> */}
+                    <img src={bannerImg} alt='bannerImg'/>
 
 
                 </div>
