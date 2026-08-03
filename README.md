@@ -11,6 +11,11 @@ This project is a dynamic Product Listing and Pricing Application that provides 
 Users can browse through a variety of items presented in a clean 3-column layout, filter or toggle views, add items to the cart, and proceed to checkout. It manages state efficiently to update the cart count in the navbar instantly and delivers interactive user feedback via toast notifications.
 
 ---
+## 🚀 Live Demo
+
+- 🌐 Live Site: [https://your-live-link.netlify.app](https://modina-khusbu-priya553.github.io/Job-Tracker-Project/)
+
+---
 
 ## 🛠️ Technologies Used
 
